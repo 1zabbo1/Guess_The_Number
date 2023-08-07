@@ -242,12 +242,12 @@
         displayFeedback(message);
         document.getElementById("user-input").disabled = true;
         displayModal(message);
-      } else if (userInput < targetNumber) {
+      } else if (userInput < targetNumber && userInput != 69) {
         displayFeedback("Too low. Try again.");
       }else if (userInput == 69) {
         displayFeedback("Congratulations! You guessed the number.");
       }
-       else {
+       else if (userInput != 69) {
         displayFeedback("Too high. Try again.");
       }
     }
